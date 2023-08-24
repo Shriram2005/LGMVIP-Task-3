@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Enrollment Form</h1>
+    </header>
+
+    <div class="container">
+        <div class="input-area">
+            <form action="">
+
+                <div class="row">
+                    <label>Name</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="row">
+                    <label>Email</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="row">
+                    <label>Website</label>
+                    <input type="url" id="website">
+                </div>
+
+                <div class="row">
+                    <label>Image Link</label>
+                    <input type="text" id="imgLink">
+                </div>
+
+                <div class="row">
+                    <label>Gender</label>
+                    <div class="row-side">
+
+                        <label class="label-text"><input type="radio" value="male" name="gender" id="male">Male</label>
+                        <br>
+
+                        <label class="label-text"><input type="radio" value="female" name="gender"
+                                id="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label>Skills</label>
+                    <div class="row-side">
+                        <label class="label-text"><input type="checkbox" value="JAVA" id="java"
+                                class="skill-checkbox">JAVA</label><br>
+                        <label class="label-text"><input type="checkbox" value="HTML" id="html"
+                                class="skill-checkbox">HTML</label><br>
+                        <label class="label-text"><input type="checkbox" value="CSS" id="css"
+                                class="skill-checkbox">CSS</label><br>
+                    </div>
+                </div>
+
+                <div class="button-row">
+                    <button id="enroll">Enroll</button>
+                    <button id="clear" onclick="clearForm()">Clear</button>
+                </div>
+
+            </form>
+        </div>
+
+
+        <div class="enrolled-students">
+            <h2>Enrolled Students</h2>
+
+            <table>
+                <tr>
+                    <th>Description</th>
+                    <th>Image</th>
+                </tr>
+
+                <!-- <tr>
+                    <td class="table-details-div">
+                        <strong>Shriram Mange</strong> <br>
+                        male <br>
+                        shrirammange12345@gmail.com <br>
+                        www.shrirammange.com <br>
+                        <span class="skills">JAVA, CSS</span>
+                    </td>
+
+                    <td class="table-img-div">
+                        <img src="demo.jpg" alt="profile-pic" class="profile-pic">
+                    </td>
+                </tr> -->
+
+            </table>
+
+            <button id="remove" onclick='removeStudent()'>Remove</button>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

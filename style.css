@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+
+.input-area {
+  width: 100%;
+  padding: 0px;
+  border-bottom: 1px solid black;
+}
+
+header h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: #b91ab9;
+  padding: 5px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.container {
+  display: flex;
+}
+
+/* input information area starts here--------------- */
+
+.input-area {
+  padding: 20px 0px;
+  background-image: linear-gradient(405deg, rgb(132, 1, 210) 0%, rgb(132, 1, 210) 10%, rgb(156, 14, 188) 10%, rgb(156, 14, 188) 19%, rgb(180, 27, 165) 19%, rgb(180, 27, 165) 27%, rgb(204, 40, 143) 27%, rgb(204, 40, 143) 34%, rgb(228, 53, 120) 34%, rgb(228, 53, 120) 100%);
+}
+
+.input-area label {
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.row label {
+  font-weight: 700;
+}
+
+input {
+  height: 25px;
+  width: 60%;
+  border-radius: 5px;
+  border: none;
+  text-indent: 10px;
+  font-size: 15px;
+}
+
+.row-side {
+  width: 60%;
+  font-size: 16px;
+}
+
+.row-side input {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.label-text {
+  font-weight: normal !important;
+  font-family: monospace;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  background-color: rgb(46, 172, 230);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px black;
+  transition-duration: .3s;
+}
+
+
+
+#clear {
+  background-color: #ff3313;
+}
+
+/* enrolled students area starts here-------------------- */
+
+.enrolled-students {
+  background-image: linear-gradient(120deg, #f5576c 0%, #f093fb 100%);
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px 10px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.enrolled-students h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table,
+tr,
+td,
+th {
+  border-collapse: collapse;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+table{
+  border: hidden;
+  border-bottom: black;
+}
+
+table tr th {
+  background-color: #27dbff;
+  /* background-color: rgb(255, 0, 162); */
+  padding: 5px;
+  border-bottom: hidden;
+}
+
+.table-details-div {
+  padding: 10px;
+}
+
+.table-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  margin: 15px;
+  border-radius: 20%;
+  box-shadow: 0px 0px 10px gray;
+}
+
+#website {
+  text-decoration: none;
+}
+
+#remove {
+  background-color: #ff4d00;
+  color: white;
+  margin-bottom: 20px;
+  display: none;
+}
+
+/* hover effects ---------------------------------------------- */
+
+.row>input{
+  box-shadow: 0px 0px 3px rgb(59, 59, 59);
+}
+
+#enroll:hover {
+  background-color: rgb(16, 137, 192);
+  box-shadow: 2px 2px 5px black;
+}
+
+#clear:hover {
+  background-color: #dd270b;
+  box-shadow: 2px 2px 10px black;
+}
+
+#remove:hover {
+  background-color: red;
+}
+
+#website:hover {
+  color: rgb(184, 21, 21);
+  text-decoration: underline;
+}
+
+
+
+/* media queries / responsiveness -------------------------------- */
+@media (width>=900px) {
+  .input-area {
+    max-width: 50vw;
+    padding: 15px;
+  }
+
+  .input-area {
+    border-bottom: none;
+    border-right: 1px solid black;
+  }
+
+  .enrolled-students {
+    height: 100vh;
+  }
+}
+
+@media (width<900px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .enrolled-students {
+    width: auto;
+  }
+
+  .enrolled-students h2 {
+    font-size: 20px;
+  }
+}
+
+@media(width <=450px) {
+  .profile-pic {
+    width: 25vw;
+    height: 25vw;
+  }
+
+  .table-details-div {
+    font-size: 3.5vw;
+  }
+}
