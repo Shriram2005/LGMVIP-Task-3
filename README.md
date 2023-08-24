@@ -19,6 +19,6 @@ As part of my Let's Grow More Web Development Internship, I've completed the 3rd
 2. Fill in your details and upload a profile picture.
 3. Click "Submit" to see your information displayed in the table.
 
-Feel free to explore the [GitHub repository]([https://github.com/your-username/job-enrollment-form](https://github.com/Shriram2005/LGMVIP-WEB-Task-3)) for this project.
+Feel free to explore the [GitHub repository](https://github.com/Shriram2005/LGMVIP-WEB-Task-3) for this project.
 
 Connect with me on [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile/) for more updates!
