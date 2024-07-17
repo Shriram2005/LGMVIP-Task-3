@@ -21,4 +21,9 @@ As part of my Let's Grow More Web Development Internship, I've completed the 3rd
 
 Feel free to explore the [GitHub repository](https://github.com/Shriram2005/LGMVIP-WEB-Task-3) for this project.
 
-Connect with me on [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile/) for more updates!
+Connect with me on [LinkedIn](https://www.linkedin.com/in/shriram-mange) for more updates!
+
+Screenshot : 
+![Screenshot 2024-07-17 181840](https://github.com/user-attachments/assets/892c4290-dd5e-4c20-b42a-52f87414f579)
+
+
